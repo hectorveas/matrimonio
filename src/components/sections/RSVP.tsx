@@ -89,17 +89,9 @@ export function RSVP() {
           </form>
 
           <div className="mt-16 pt-16 border-t border-gray-200">
-            <div className="grid md:grid-cols-2 gap-8 text-sm text-gray-600">
-              <div className="space-y-2">
-                <p>Camila Rivas & Héctor Veas</p>
-                <p>25 Abril 2026</p>
-              </div>
-              <div className="space-y-2">
-                <p>Mi web de matrimonio</p>
-                <p>Planifica tu matrimonio</p>
-                <p>¿Quiénes somos?</p>
-                <p>Configuración de cookies</p>
-              </div>
+            <div className="text-center text-sm text-gray-600">
+              <p className="mb-2">Camila Rivas & Héctor Veas</p>
+              <p>25 Abril 2026</p>
             </div>
           </div>
         </div>
