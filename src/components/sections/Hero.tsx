@@ -11,7 +11,7 @@ export function Hero() {
       <div className="relative text-center text-white z-10 px-4">
         <Heart className="mx-auto w-12 h-12 mb-6 animate-pulse" />
         <h1 className="text-6xl font-script mb-4">Camila & Héctor</h1>
-        <p className="text-xl tracking-wider mb-8">NOS CASAMOS</p>
+        <p className="text-xl tracking-wider mb-8">¡NOS CASAMOS!</p>
         <p className="text-3xl font-light tracking-wide">25 de Abril, 2026</p>
       </div>
     </div>
