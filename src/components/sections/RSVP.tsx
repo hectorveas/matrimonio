@@ -20,18 +20,18 @@ export function RSVP() {
     <Section background="white" className="pt-32">
       <Container className="max-w-4xl relative">
         {/* Decorative Images */}
-        <div className="absolute left-0 top-0 w-64 h-full opacity-30 pointer-events-none">
+        <div className="absolute left-0 top-0 w-64 h-full opacity-80 pointer-events-none">
           <img 
-            src="https://images.unsplash.com/photo-1490349368154-73de9c9bc37c?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
+            src="/images/lavender-left.png"
             alt=""
-            className="object-cover"
+            className="object-contain h-full"
           />
         </div>
-        <div className="absolute right-0 top-0 w-64 h-full opacity-30 pointer-events-none">
+        <div className="absolute right-0 top-0 w-64 h-full opacity-80 pointer-events-none">
           <img 
-            src="https://images.unsplash.com/photo-1490349368154-73de9c9bc37c?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
+            src="/images/lavender-right.png"
             alt=""
-            className="object-cover transform scale-x-[-1]"
+            className="object-contain h-full"
           />
         </div>
 
