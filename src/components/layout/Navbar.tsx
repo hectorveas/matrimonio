@@ -18,15 +18,6 @@ export function Navbar() {
   const isHomePage = location.pathname === '/';
   const isDarkBackground = isHomePage && !isScrolled;
 
-  const scrollToSection = (id: string) => {
-    if (isHomePage) {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
-
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       isScrolled || !isHomePage ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
@@ -67,14 +58,14 @@ export function Navbar() {
             >
               CONFIRMA TU ASISTENCIA
             </Link>
-            <button
-              onClick={() => scrollToSection('contacto')}
+            <Link
+              to="/contacto"
               className={`text-xs tracking-wider font-sans ${
                 isDarkBackground ? 'text-white' : 'text-gray-800'
               } hover:text-rose-400 transition-colors duration-300`}
             >
               CONTÁCTANOS
-            </button>
+            </Link>
           </div>
         </div>
       </Container>
