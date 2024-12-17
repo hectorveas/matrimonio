@@ -87,7 +87,7 @@ export function Blog() {
           <div className="mt-16 pt-16 border-t border-gray-200">
             <div className="text-center text-sm text-gray-600">
               <p className="mb-2">Camila Rivas & Héctor Veas</p>
-              <p>24 Abril 2026</p>
+              <p>25 Abril 2026</p>
             </div>
           </div>
         </div>
