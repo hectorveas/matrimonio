@@ -51,14 +51,14 @@ export function Navbar() {
             >
               ¡BIENVENIDOS!
             </Link>
-            <button
-              onClick={() => scrollToSection('blog')}
+            <Link
+              to="/blog"
               className={`text-xs tracking-wider font-sans ${
                 isDarkBackground ? 'text-white' : 'text-gray-800'
               } hover:text-rose-400 transition-colors duration-300`}
             >
               BLOG DE BODA
-            </button>
+            </Link>
             <Link
               to="/rsvp"
               className={`text-xs tracking-wider font-sans ${
