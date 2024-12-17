@@ -7,10 +7,10 @@ export function Story() {
   return (
     <Section background="rose">
       <Container>
-        <SectionTitle>Nuestra Historia</SectionTitle>
+        <SectionTitle>Cuéntale que la conocí bailando</SectionTitle>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <img 
-            src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+            src="https://media.discordapp.net/attachments/1086091732237688862/1318426222472069140/IMG_4995.png?ex=6762479a&is=6760f61a&hm=155fade7fa3256576e950ff2555598d91624489e7123a44cbd117d7a6e162c5b&=&format=webp&quality=lossless&width=1120&height=1314" 
             alt="Pareja feliz" 
             className="rounded-lg shadow-lg"
           />
