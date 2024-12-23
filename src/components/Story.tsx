@@ -7,7 +7,7 @@ export default function Story() {
         <h2 className="text-4xl font-serif mb-8">Nuestra Historia</h2>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <img 
-            src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+            src="https://drive.google.com/drive/u/0/folders/1j4NdwqRiIAsSU4UC5Xa-XopgO-RWcIOM" 
             alt="Pareja feliz" 
             className="rounded-lg shadow-lg"
           />

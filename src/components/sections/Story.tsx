@@ -2,6 +2,8 @@ import React from 'react';
 import { Container } from '../layout/Container';
 import { Section } from '../layout/Section';
 import { SectionTitle } from '../ui/SectionTitle';
+import storyImage1 from '../../assets/matrimonio.webp';
+import storyImage2 from '../../assets/footer_matrimonio.webp';
 
 export function Story() {
   return (
@@ -13,7 +15,7 @@ export function Story() {
           {/* Primera sección: foto y texto inicial */}
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <img 
-              src="https://cdn.discordapp.com/attachments/1086091732237688862/1318431968068632607/IMG_4911_1.jpg?ex=67624cf4&is=6760fb74&hm=9e31b3ff209425018f1cb8eb5996c1b36ce28518d39aceec8b30e8e1af2fa73e&" 
+              src={storyImage1}
               alt="Pareja feliz" 
               className="rounded-lg shadow-lg"
             />
@@ -50,7 +52,7 @@ export function Story() {
               </p>
             </div>
             <img 
-              src="https://media.discordapp.net/attachments/1086091732237688862/1318426222472069140/IMG_4995.png?ex=6762479a&is=6760f61a&hm=155fade7fa3256576e950ff2555598d91624489e7123a44cbd117d7a6e162c5b&=&format=webp&quality=lossless&width=1120&height=1314" 
+              src={storyImage2}
               alt="Pareja feliz" 
               className="rounded-lg shadow-lg"
             />
