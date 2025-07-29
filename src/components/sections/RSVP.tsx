@@ -88,6 +88,8 @@ export function RSVP() {
             </div>
           </form>
 
+
+
           <div className="mt-16 pt-16 border-t border-gray-200">
             <div className="text-center text-sm text-gray-600">
               <p className="mb-2">Camila Rivas & Héctor Veas</p>

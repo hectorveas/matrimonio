@@ -180,19 +180,59 @@ export function Gifts() {
             ))}
           </div>
 
-          <div className="mt-12 text-center">
-            <div className="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">¿Prefieres hacer una transferencia bancaria?</h3>
-              <p className="text-gray-600 mb-6">
-                Si prefieres hacer una transferencia bancaria te dejo nuestros datos:
-              </p>
-              <div className="bg-gray-50 rounded-lg p-4 text-left">
-                <p className="text-sm text-gray-600 mb-2"><strong>Titular:</strong> Camila Rivas</p>
-                <p className="text-sm text-gray-600 mb-2"><strong>RUT:</strong> 20.550.498-2</p>
-                <p className="text-sm text-gray-600 mb-2"><strong>Banco:</strong> Banco de Chile</p>
-                <p className="text-sm text-gray-600 mb-2"><strong>Tipo de cuenta:</strong> Cuenta Corriente</p>
-                <p className="text-sm text-gray-600 mb-2"><strong>Número de cuenta:</strong> 00-191-09210-10</p>
-                <p className="text-sm text-gray-600"><strong>Email:</strong> camila.rivas@derecho.uchile.cl</p>
+          {/* Sección explicativa sobre cómo funciona la lista de deseos */}
+          <div className="mt-16 pt-16 border-t border-gray-200">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl font-script text-center mb-8 text-gray-800">¿Cómo funciona nuestra Lista de Deseos?</h2>
+              
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div className="bg-rose-50 rounded-lg p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">1</div>
+                    <h3 className="text-lg font-semibold text-gray-800 ml-3">Explora nuestros deseos</h3>
+                  </div>
+                  <p className="text-gray-600">
+                    Navega por nuestra divertida lista de deseos únicos y creativos que preparamos especialmente para ustedes.
+                  </p>
+                </div>
+
+                <div className="bg-rose-50 rounded-lg p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">2</div>
+                    <h3 className="text-lg font-semibold text-gray-800 ml-3">Elige tu favorito</h3>
+                  </div>
+                  <p className="text-gray-600">
+                    Haz clic en "¡Quiero regalar esto!" en el deseo que más te guste o te haga reír.
+                  </p>
+                </div>
+
+                <div className="bg-rose-50 rounded-lg p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">3</div>
+                    <h3 className="text-lg font-semibold text-gray-800 ml-3">Copia los datos</h3>
+                  </div>
+                  <p className="text-gray-600">
+                    Se abrirá un formulario con nuestros datos bancarios. Haz clic en los íconos para copiar automáticamente la información.
+                  </p>
+                </div>
+
+                <div className="bg-rose-50 rounded-lg p-6">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">4</div>
+                    <h3 className="text-lg font-semibold text-gray-800 ml-3">Realiza la transferencia</h3>
+                  </div>
+                  <p className="text-gray-600">
+                    Usa los datos copiados para hacer la transferencia por el monto del deseo elegido.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-lg p-6 text-center">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">💡 Consejo</h3>
+                <p className="text-gray-600">
+                  Cada deseo tiene un precio entre $20.000 y $60.000. Puedes elegir varios deseos diferentes 
+                  o simplemente el que más te divierta. ¡Lo importante es que nos acompañes en este día especial!
+                </p>
               </div>
             </div>
           </div>
