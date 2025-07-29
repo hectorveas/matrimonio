@@ -58,6 +58,14 @@ export function Navbar() {
               BLOG DE BODA
             </Link>
             <Link
+              to="/regalos"
+              className={`text-xs tracking-wider font-sans ${
+                isDarkBackground ? 'text-white' : 'text-gray-800'
+              } hover:text-rose-400 transition-colors duration-300`}
+            >
+              REGALOS
+            </Link>
+            <Link
               to="/rsvp"
               className={`text-xs tracking-wider font-sans ${
                 isDarkBackground ? 'text-white' : 'text-gray-800'
@@ -71,7 +79,7 @@ export function Navbar() {
                 isDarkBackground ? 'text-white' : 'text-gray-800'
               } hover:text-rose-400 transition-colors duration-300`}
             >
-              CONTÁCTANOS
+              PREGUNTAS FRECUENTES
             </Link>
           </div>
 
@@ -105,6 +113,13 @@ export function Navbar() {
                 BLOG DE BODA
               </Link>
               <Link
+                to="/regalos"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-800 hover:text-rose-400 transition-colors duration-300 text-sm tracking-wider"
+              >
+                REGALOS
+              </Link>
+              <Link
                 to="/rsvp"
                 onClick={() => setIsMenuOpen(false)}
                 className="text-gray-800 hover:text-rose-400 transition-colors duration-300 text-sm tracking-wider"
@@ -116,7 +131,7 @@ export function Navbar() {
                 onClick={() => setIsMenuOpen(false)}
                 className="text-gray-800 hover:text-rose-400 transition-colors duration-300 text-sm tracking-wider"
               >
-                CONTÁCTANOS
+                PREGUNTAS FRECUENTES
               </Link>
             </div>
           </div>

@@ -69,8 +69,8 @@ export function RSVP() {
               className="bg-white"
             >
               <option value="">¿Asistirás a nuestra boda?</option>
-              <option value="yes">¡Sí, no me lo pierdo!</option>
-              <option value="no">Lo siento, no podré asistir</option>
+              <option value="yes">Sí asistiré</option>
+              <option value="no">No asistiré</option>
             </Select>
             <textarea
               value={message}

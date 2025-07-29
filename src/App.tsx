@@ -7,6 +7,7 @@ import { Story } from './components/sections/Story';
 import { RSVP } from './components/sections/RSVP';
 import { Blog } from './components/sections/Blog';
 import { Contact } from './components/sections/Contact';
+import { Gifts } from './components/sections/Gifts';
 import { Footer } from './components/layout/Footer';
 
 function HomePage() {
@@ -32,6 +33,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/regalos" element={<Gifts />} />
             <Route path="/rsvp" element={<RSVP />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contacto" element={<Contact />} />
