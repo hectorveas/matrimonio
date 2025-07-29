@@ -67,6 +67,26 @@
   animation: shimmer 2s infinite;
 }
 
+/* Mejoras para títulos con gradientes */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  padding: 0.1em 0;
+  line-height: 1.1;
+}
+
+/* Fallback para navegadores que no soportan bg-clip-text */
+@supports not (background-clip: text) {
+  .bg-clip-text {
+    background: none !important;
+    -webkit-text-fill-color: initial;
+    text-fill-color: initial;
+    color: #374151; /* gray-700 como fallback */
+  }
+}
+
 .font-script {
   font-family: 'Great Vibes', cursive;
 }

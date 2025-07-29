@@ -18,7 +18,7 @@ export function Story() {
               <Music className="mx-4 w-8 h-8 text-rose-600 animate-pulse" />
               <div className="w-20 h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent"></div>
             </div>
-                         <h2 className="text-5xl md:text-6xl font-script text-gray-800 mb-4 drop-shadow-2xl">
+                         <h2 className="text-5xl md:text-6xl font-script text-gray-800 mb-4 drop-shadow-2xl leading-tight px-4">
                Cuéntale que la conocí bailando...
              </h2>
              <div className="flex items-center justify-center mt-6">

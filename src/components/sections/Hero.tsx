@@ -34,7 +34,7 @@ export function Hero() {
 
         {/* Nombres con efectos */}
         <div className="mb-6">
-          <h1 className="text-7xl md:text-8xl font-script mb-2 bg-gradient-to-r from-white via-rose-100 to-white bg-clip-text text-transparent drop-shadow-2xl animate-fade-in">
+          <h1 className="text-7xl md:text-8xl font-script mb-2 text-white drop-shadow-2xl animate-fade-in leading-tight">
             Camila
           </h1>
           <div className="flex items-center justify-center my-4">
@@ -42,7 +42,7 @@ export function Hero() {
             <Heart className="mx-4 w-6 h-6 text-rose-300" />
             <div className="w-16 h-px bg-gradient-to-r from-transparent via-rose-300 to-transparent"></div>
           </div>
-          <h1 className="text-7xl md:text-8xl font-script bg-gradient-to-r from-white via-rose-100 to-white bg-clip-text text-transparent drop-shadow-2xl animate-fade-in">
+          <h1 className="text-7xl md:text-8xl font-script text-white drop-shadow-2xl animate-fade-in leading-tight">
             Héctor
           </h1>
         </div>

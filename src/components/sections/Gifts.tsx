@@ -94,11 +94,11 @@ const wishes = [
 const getPriorityColor = (priority: string) => {
   switch (priority) {
     case 'alta':
-      return 'bg-red-100 text-red-800';
+      return 'bg-pink-100 text-pink-700';
     case 'media':
-      return 'bg-yellow-100 text-yellow-800';
+      return 'bg-sky-100 text-sky-700';
     case 'baja':
-      return 'bg-green-100 text-green-800';
+      return 'bg-rose-100 text-rose-700';
     default:
       return 'bg-gray-100 text-gray-800';
   }
@@ -127,53 +127,68 @@ export function Gifts() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-sky-50 pt-20">
       <Container>
         <Section>
-          <SectionTitle>Lista de Deseos</SectionTitle>
-          
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center mb-4">
-              <Gift className="w-8 h-8 text-rose-400 mr-2" />
-              <Heart className="w-6 h-6 text-rose-400" />
+          {/* Enhanced Header */}
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center mb-6">
+              <div className="w-20 h-px bg-gradient-to-r from-transparent via-pink-300 to-transparent"></div>
+              <Gift className="mx-4 w-8 h-8 text-pink-400 animate-pulse" />
+              <div className="w-20 h-px bg-gradient-to-r from-transparent via-pink-300 to-transparent"></div>
             </div>
-            <div className="text-lg text-gray-600 max-w-3xl mx-auto">
-              <p className="mb-4 font-semibold text-gray-700">Queridos familiares y amigos:</p>
-              <p className="mb-4">
-                Con mucha ilusión queremos compartir este sueño tan especial con ustedes. Hemos preparado 
-                una lista de deseos para que, si así lo desean, puedan ser parte de esta aventura única.
-              </p>
-              <p className="mb-4">
-                Cada gesto tendrá un significado muy especial para nosotros. Gracias de corazón por 
-                acompañarnos en este momento tan importante.
-              </p>
-              <p className="font-semibold text-gray-700">¡Estamos felices de tenerlos cerca! 🤎</p>
+            <h1 className="text-6xl md:text-7xl font-script text-gray-800 mb-6 leading-tight px-4">
+              <span className="bg-gradient-to-r from-pink-400 via-sky-400 to-pink-400 bg-clip-text text-transparent">
+                Lista de Deseos
+              </span>
+            </h1>
+            
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/50 max-w-4xl mx-auto">
+              <div className="flex items-center justify-center mb-6">
+                <Gift className="w-6 h-6 text-pink-400 mr-2" />
+                <Heart className="w-6 h-6 text-sky-400 animate-pulse" />
+                <Gift className="w-6 h-6 text-pink-400 ml-2" />
+              </div>
+              <div className="text-lg text-gray-700 leading-relaxed">
+                <p className="mb-4 font-semibold text-pink-600 text-xl">Queridos familiares y amigos:</p>
+                <p className="mb-4">
+                  Con mucha ilusión queremos compartir este sueño tan especial con ustedes. Hemos preparado 
+                  una lista de deseos para que, si así lo desean, puedan ser parte de esta aventura única.
+                </p>
+                <p className="mb-4">
+                  Cada gesto tendrá un significado muy especial para nosotros. Gracias de corazón por 
+                  acompañarnos en este momento tan importante.
+                </p>
+                <p className="font-semibold text-sky-600 text-lg">¡Estamos felices de tenerlos cerca! 🤎</p>
+              </div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {wishes.map((wish) => (
-              <div key={wish.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div key={wish.id} className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-white/50">
                 <div className="p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <h3 className="text-xl font-semibold text-gray-800">{wish.name}</h3>
-                    <span className={`px-2 py-1 rounded-full text-xs font-medium ${getPriorityColor(wish.priority)}`}>
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-semibold text-gray-800 leading-tight">{wish.name}</h3>
+                    <span className={`px-3 py-1 rounded-full text-xs font-bold ${getPriorityColor(wish.priority)} border-2 border-white shadow-md`}>
                       {wish.priority}
                     </span>
                   </div>
                   
-                  <p className="text-gray-600 mb-4">{wish.description}</p>
+                  <p className="text-gray-600 mb-6 leading-relaxed">{wish.description}</p>
                   
-                  <div className="flex items-center justify-center mb-4">
-                    <span className="text-2xl font-bold text-rose-600">{wish.price}</span>
+                  <div className="flex items-center justify-center mb-6">
+                    <div className="bg-gradient-to-r from-pink-100 to-sky-100 rounded-xl px-4 py-2">
+                      <span className="text-3xl font-bold text-pink-600">{wish.price}</span>
+                    </div>
                   </div>
                   
                   <button 
                     onClick={() => openModal(wish)}
-                    className="w-full bg-rose-600 text-white py-2 px-4 rounded-lg hover:bg-rose-700 transition-colors duration-300 flex items-center justify-center group"
+                    className="w-full bg-gradient-to-r from-pink-400 to-sky-400 hover:from-pink-500 hover:to-sky-500 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center group transform hover:scale-105 shadow-lg"
                   >
                     ¡Quiero regalar esto!
-                    <Heart className="w-4 h-4 ml-2 group-hover:scale-110 transition-transform duration-300" />
+                    <Heart className="w-5 h-5 ml-2 group-hover:scale-110 transition-transform duration-300" />
                   </button>
                 </div>
               </div>
@@ -186,9 +201,9 @@ export function Gifts() {
               <h2 className="text-3xl font-script text-center mb-8 text-gray-800">¿Cómo funciona nuestra Lista de Deseos?</h2>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div className="bg-rose-50 rounded-lg p-6">
+                <div className="bg-pink-50 rounded-lg p-6">
                   <div className="flex items-center mb-4">
-                    <div className="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">1</div>
+                    <div className="bg-pink-400 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">1</div>
                     <h3 className="text-lg font-semibold text-gray-800 ml-3">Explora nuestros deseos</h3>
                   </div>
                   <p className="text-gray-600">
@@ -196,9 +211,9 @@ export function Gifts() {
                   </p>
                 </div>
 
-                <div className="bg-rose-50 rounded-lg p-6">
+                <div className="bg-sky-50 rounded-lg p-6">
                   <div className="flex items-center mb-4">
-                    <div className="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">2</div>
+                    <div className="bg-sky-400 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">2</div>
                     <h3 className="text-lg font-semibold text-gray-800 ml-3">Elige tu favorito</h3>
                   </div>
                   <p className="text-gray-600">
@@ -208,7 +223,7 @@ export function Gifts() {
 
                 <div className="bg-rose-50 rounded-lg p-6">
                   <div className="flex items-center mb-4">
-                    <div className="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">3</div>
+                    <div className="bg-rose-400 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">3</div>
                     <h3 className="text-lg font-semibold text-gray-800 ml-3">Copia los datos</h3>
                   </div>
                   <p className="text-gray-600">
@@ -216,9 +231,9 @@ export function Gifts() {
                   </p>
                 </div>
 
-                <div className="bg-rose-50 rounded-lg p-6">
+                <div className="bg-pink-50 rounded-lg p-6">
                   <div className="flex items-center mb-4">
-                    <div className="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">4</div>
+                    <div className="bg-pink-400 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">4</div>
                     <h3 className="text-lg font-semibold text-gray-800 ml-3">Realiza la transferencia</h3>
                   </div>
                   <p className="text-gray-600">
@@ -255,10 +270,10 @@ export function Gifts() {
               </div>
 
               <div className="mb-6">
-                <div className="bg-rose-50 rounded-lg p-4 mb-4">
-                  <h4 className="font-semibold text-rose-800 mb-2">{selectedWish.name}</h4>
-                  <p className="text-rose-600 text-sm mb-2">{selectedWish.description}</p>
-                  <p className="text-2xl font-bold text-rose-600">{selectedWish.price}</p>
+                <div className="bg-pink-50 rounded-lg p-4 mb-4">
+                  <h4 className="font-semibold text-pink-700 mb-2">{selectedWish.name}</h4>
+                  <p className="text-pink-600 text-sm mb-2">{selectedWish.description}</p>
+                  <p className="text-2xl font-bold text-sky-600">{selectedWish.price}</p>
                 </div>
               </div>
 
@@ -345,8 +360,8 @@ export function Gifts() {
                 </div>
               </div>
 
-              <div className="bg-rose-50 rounded-lg p-4 mb-6">
-                <p className="text-sm text-rose-700 text-center">
+              <div className="bg-sky-50 rounded-lg p-4 mb-6">
+                <p className="text-sm text-sky-700 text-center">
                   💡 <strong>Tip:</strong> Haz clic en los íconos de copiar para copiar la información automáticamente
                 </p>
               </div>
@@ -357,7 +372,7 @@ export function Gifts() {
                 </p>
                 <button 
                   onClick={closeModal}
-                  className="bg-rose-600 text-white px-6 py-2 rounded-lg hover:bg-rose-700 transition-colors"
+                  className="bg-pink-400 text-white px-6 py-2 rounded-lg hover:bg-pink-500 transition-colors"
                 >
                   Cerrar
                 </button>

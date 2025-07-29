@@ -14,8 +14,10 @@ export function Details() {
             <Heart className="mx-4 w-8 h-8 text-rose-400 animate-pulse" />
             <div className="w-16 h-px bg-gradient-to-r from-transparent via-rose-300 to-transparent"></div>
           </div>
-          <h1 className="text-6xl md:text-7xl font-script text-gray-800 mb-4 bg-gradient-to-r from-gray-700 via-rose-600 to-gray-700 bg-clip-text text-transparent">
-            ¡Bienvenidos a nuestro matrimonio!
+          <h1 className="text-6xl md:text-7xl font-script text-gray-800 mb-4 leading-tight px-4">
+            <span className="bg-gradient-to-r from-gray-700 via-rose-600 to-gray-700 bg-clip-text text-transparent">
+              ¡Bienvenidos a nuestro matrimonio!
+            </span>
           </h1>
           <p className="text-2xl md:text-3xl font-script text-rose-500">
             ¡Sí, nos casamos y queremos celebrarlo contigo!
